@@ -1,0 +1,95 @@
+@mixin transition($transform, $length, $transitionType) {
+  -webkit-transition: $transform $length $transitionType;
+  -moz-transition: $transform $length $transitionType;
+  -o-transition: $transform $length $transitionType;
+  transition: $transform $length $transitionType;
+}
+
+.arrow-btn {
+  height: 17px;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  z-index: 2;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+#carousel-1-arrow-right,
+#carousel-2-arrow-right {
+  right: 5px;
+}
+
+#carousel-1-arrow-left,
+#carousel-2-arrow-left {
+  left: 5px;
+}
+
+.carousel {
+  border: 1px solid gray;
+  overflow: hidden;
+  padding: 0;
+  width: 50%;
+
+  .pause-button {
+    background: url('../assets/images/rightArw.png') no-repeat center;
+    background-size: contain;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    margin-top: 1%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.slides-container {
+  overflow: hidden;
+  height: 250px;
+}
+
+.slide {
+  display: inline-block;
+  height: 250px;
+  width: 100%;
+  position: absolute;
+}
+
+#slide-0 {
+  background-color: blue;
+}
+
+#slide-1 {
+  background-color: red;
+}
+
+#slide-2 {
+  background-color: green;
+}
+
+#slide-3 {
+  background-color: magenta;
+}
+
+#slide-4 {
+  background-color: pink;
+}
+
+#slide-5 {
+  background-color: orange;
+}
+
+#slide-6 {
+  background-color: teal;
+}
+
+#slide-7 {
+  background-color: purple;
+}
